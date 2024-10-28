@@ -1,0 +1,31 @@
+.logo {
+	display: block;
+}
+
+.header {
+	position: relative;
+	padding: 10px 0;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+
+		display: block;
+		font-weight: 700;
+		font-size: 17px;
+		text-align: center;
+	}
+
+	&__actions {
+		display: flex;
+		gap: 18px;
+	}
+}

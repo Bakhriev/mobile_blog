@@ -1,7 +1,23 @@
 <header class="header">
 	<div class="header__container container">
-		<button class="burger btn-reset">
-			<span></span>
-		</button>
+		<a href="/" class="logo">
+			<img width="24" height="32" src="./assets/img/svg/logo.svg" alt="logo" />
+		</a>
+
+		<span class="header__title">Объявления</span>
+
+		<div class="header__actions">
+			<button class="btn-reset" data-trigger="filter">
+				<svg width="24" height="24">
+					<use href="./assets/img/svg/sprite.svg#filter"></use>
+				</svg>
+			</button>
+
+			<button class="btn-reset">
+				<svg width="24" height="24">
+					<use href="./assets/img/svg/sprite.svg#notice"></use>
+				</svg>
+			</button>
+		</div>
 	</div>
 </header>
