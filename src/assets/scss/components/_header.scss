@@ -28,4 +28,26 @@
 		display: flex;
 		gap: 18px;
 	}
+
+	&__filter-btn {
+		transition: color 150ms ease-in-out;
+		color: #000;
+		@include hover {
+			color: #31aff5;
+		}
+		&.active {
+			color: #31aff5;
+		}
+	}
+
+	&__notice-btn {
+		transition: color 150ms ease-in-out;
+		color: #000;
+		@include hover {
+			color: #31aff5;
+		}
+		&.active {
+			color: #31aff5;
+		}
+	}
 }
