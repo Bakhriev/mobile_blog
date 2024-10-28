@@ -38,6 +38,10 @@
 		line-height: 135%;
 		text-align: center;
 		color: rgba(0, 0, 0, 0.5);
+		transition: color 150ms ease-in-out;
+		&.active {
+			color: #31aff5;
+		}
 	}
 }
 .list-reset {
