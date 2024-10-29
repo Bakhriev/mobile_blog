@@ -1,0 +1,41 @@
+.button-group {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.btn {
+	padding: 12px;
+	border-radius: 5px;
+	background: linear-gradient(39deg, #0974c5 0%, #4bb1fe 100%);
+
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 135%;
+	color: #fff;
+
+	&:active {
+		scale: 0.97;
+	}
+}
+
+.btn-secondary {
+	padding: 12px;
+	border-radius: 5px;
+
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 135%;
+	color: #31aff5;
+	border: 1px solid #4bb1fe;
+
+	transition:
+		background-color 100ms ease-in-out,
+		color 100ms ease-in-out;
+
+	&:active {
+		background-color: #0974c5;
+		color: #fff;
+		scale: 0.97;
+	}
+}

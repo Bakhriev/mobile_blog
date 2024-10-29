@@ -137,6 +137,14 @@
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 135%;
+
+		&:active {
+			scale: 0.97;
+		}
+	}
+	&__btn {
+		margin-top: 10px;
+		width: 100%;
 	}
 }
 
@@ -178,7 +186,8 @@
 	border-radius: 5px;
 	transition: background-color 150ms ease-in-out;
 
-	@include hover {
+	&:active {
 		background-color: #d3cfcf;
+		scale: 0.97;
 	}
 }

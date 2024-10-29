@@ -11,6 +11,10 @@
 @import './helpers/global';
 
 // components
-@import './components/header';
+@import './components/btns';
+@import './components/checkbox';
 @import './components/article';
+@import './components/filters';
+
+@import './components/header';
 @import './components/footer';

@@ -3,8 +3,146 @@
 	@include('./template/_head.html')
 	<body>
 		<div class="app">
-			<div class="overlay"></div>
 			@include('./assets/components/header.html')
+
+			<div class="filters">
+				<form action="#" class="form">
+					<div class="form__container container">
+						<div class="form__inner">
+							<div class="form__top">
+								<span class="form__title">Фильтры</span>
+
+								<button
+									type="button"
+									class="form__close btn-reset"
+									data-destroyer>
+									<svg width="20" height="20">
+										<use href="./assets/img/svg/sprite.svg#close"></use>
+									</svg>
+								</button>
+							</div>
+
+							<div class="filter-group">
+								<span class="filter-group__title">Районы</span>
+								<!-- checkboxes -->
+								<div class="checkbox-group">
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Воложский</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Фрунзенский</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Кировский</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Заводской</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Ленинский</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Октябрьский</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="filter-group">
+								<span class="filter-group__title">Категории</span>
+								<!-- checkboxes -->
+								<div class="checkbox-group">
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Ремонт и отделка</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Строительство</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Ремонт бытовой техники</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Грузчики</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Уборка территории</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Разнорабочие</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Сварщики</span>
+									</label>
+
+									<label class="checkbox">
+										<input type="checkbox" name="" />
+										<span class="checkbox__checkmark"></span>
+
+										<span class="checkbox__text">Плотники</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="button-group">
+								<button class="btn btn-reset">Показать объявления</button>
+								<button type="reset" class="btn-secondary btn-reset">
+									Очистить
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
 			<!--  -->
 			<main class="main">
 				<!--  -->
@@ -85,12 +223,12 @@
 									<time class="article__time" datetime="2024-05-02T13:24"
 										>2 мая в 13:24</time
 									>
-									<div class="article__comments">
+									<button class="article__comments btn-reset">
 										<svg width="22" height="22">
 											<use href="./assets/img/svg/sprite.svg#message"></use>
 										</svg>
 										<span>2</span>
-									</div>
+									</button>
 								</footer>
 								<!--  -->
 							</div>
@@ -164,13 +302,17 @@
 									<time class="article__time" datetime="2024-05-02T13:24"
 										>2 мая в 13:24</time
 									>
-									<div class="article__comments">
+									<button class="article__comments btn-reset">
 										<svg width="22" height="22">
 											<use href="./assets/img/svg/sprite.svg#message"></use>
 										</svg>
 										<span>2</span>
-									</div>
+									</button>
 								</footer>
+
+								<button class="article__btn btn btn-reset">
+									Оставить заявку
+								</button>
 							</div>
 						</article>
 					</div>
