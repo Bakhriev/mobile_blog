@@ -2,9 +2,10 @@ const filter = () => {
 	const body = document.body;
 	const filterForm = document.querySelector('.filters');
 	const filterTrigger = document.querySelector('[data-trigger="filter"]');
-	const closeBtn = filterForm.querySelector('[data-destroyer]');
 
 	if (!filterForm && !filterTrigger) return;
+
+	const closeBtn = filterForm.querySelector('[data-destroyer]');
 
 	filterTrigger.addEventListener('click', () => {
 		filterForm.classList.toggle('active');

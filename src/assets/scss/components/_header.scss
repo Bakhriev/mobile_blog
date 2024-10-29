@@ -24,6 +24,8 @@
 		font-weight: 700;
 		font-size: 17px;
 		text-align: center;
+		max-width: 216px;
+		@include text-shorten(1);
 	}
 
 	&__actions {
