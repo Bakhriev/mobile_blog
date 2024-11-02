@@ -21,14 +21,14 @@
 }
 
 .nav-menu {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 10px;
+	display: flex;
+
 	&__item {
 		flex-grow: 1;
 	}
 
 	&__link {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
