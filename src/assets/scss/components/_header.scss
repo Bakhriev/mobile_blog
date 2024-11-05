@@ -7,6 +7,14 @@
 	z-index: 120;
 	background-color: #fff;
 
+	&--fixed {
+		position: fixed;
+		z-index: 5;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+
 	&--border {
 		.header__inner {
 			border-bottom: 1px solid rgba(0, 0, 0, 0.05);
