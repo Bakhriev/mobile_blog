@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+	@include('./template/_head.html')
+	<body>
+		<div class="app">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__inner">
+						<a href="#">
+							<svg width="21" height="19">
+								<use href="./assets/img/svg/sprite.svg#arrow_back"></use>
+							</svg>
+						</a>
+
+						<span class="header__title">Нужно вывезти рубин..</span>
+
+						<div class="header__actions">
+							<button class="header__notice-btn btn-reset">
+								<svg width="24" height="24">
+									<use href="./assets/img/svg/sprite.svg#notice"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!--  -->
+			<main class="main">
+				<!--  -->
+
+				<div class="container">
+					<article class="article article-main">
+						<div class="article__images article-main__images">
+							<img
+								class="article__main-img"
+								src="./assets/img/article_1.jpg"
+								alt="" />
+							<!-- expand all images on click -->
+
+							<div class="article__images-inner">
+								<img
+									class="article__img"
+									src="./assets/img/article_1.jpg"
+									alt="" />
+
+								<img
+									class="article__img"
+									src="./assets/img/article_2.jpg"
+									alt="" />
+
+								<button class="expand-all btn-reset">
+									<!-- count -->
+									+2
+								</button>
+							</div>
+						</div>
+
+						<div class="article__inner">
+							<header class="article__header">
+								<div class="article-main__wrapper">
+									<ul class="tag-group list-reset">
+										<li>
+											<a href="#" class="tag">
+												<svg width="12" height="12">
+													<use href="./assets/img/svg/sprite.svg#build"></use>
+												</svg>
+												<span>Строительство</span>
+											</a>
+										</li>
+									</ul>
+
+									<time class="article__time" datetime="2024-05-02T13:24"
+										>2 мая в 13:24</time
+									>
+								</div>
+
+								<h2 class="article__title">
+									Завтра нужны 3 человека подсобника....
+								</h2>
+							</header>
+
+							<div class="article__author-wrapper">
+								<div class="article__author">
+									<img
+										width="20"
+										height="20"
+										src="./assets/img/user_pic.png"
+										alt="user picture"
+										class="article__author-pic" />
+
+									<span class="article__author-name">Александр Алексеевич</span>
+								</div>
+								<span class="text-blue">По договоренности</span>
+							</div>
+
+							<div class="article__text-wrapper">
+								<p class="article__text">
+									Здравствуйте, нужно вывезти. цена договорная,рубин.2 эт лифта
+									нет,50+ мешков
+								</p>
+							</div>
+
+							<div class="divider"></div>
+
+							<div class="stats mt-20">
+								<div class="stats__row">
+									<div class="stats__key">Нужно сделать:</div>
+									<div class="stats__value">Среда, в 9:34</div>
+								</div>
+
+								<div class="stats__row">
+									<div class="stats__key">Адрес:</div>
+									<div class="stats__value">
+										Саратов, ул. Имени В. Г. Рахова
+									</div>
+								</div>
+
+								<div class="stats__row">
+									<div class="stats__key">Расстояние:</div>
+									<div class="stats__value">от вас в 0,8 км</div>
+								</div>
+							</div>
+
+							<button
+								class="article__btn article-main__btn btn-secondary btn-reset">
+								Показать на карте
+							</button>
+						</div>
+					</article>
+				</div>
+
+				<div id="map" class="map mt-30" data-visible="true"></div>
+
+				<div class="container">
+					<div class="section">
+						<div class="section__top">
+							<div class="title">Отклики</div>
+						</div>
+						<div class="cards-wrapper">
+							<div class="resp-card">
+								<img
+									src="./assets/img/article_1.jpg"
+									alt=""
+									class="resp-card__img" />
+
+								<div class="resp-card__inner">
+									<div class="resp-card__top">
+										<div class="resp-card__info">
+											<div class="title-3">Евгений Степин</div>
+											<div class="resp-card__subtitle">
+												несколько секунд назад
+											</div>
+										</div>
+										<div class="resp-card__price">2000 руб.</div>
+									</div>
+									<div class="resp-card__body">
+										<p>Готов сделать сегодня</p>
+									</div>
+									<div class="resp-card__bottom">
+										<button class="btn-basic btn-basic--red btn-reset">
+											Отказаться
+										</button>
+										<button class="btn-secondary btn-reset">Обсудить</button>
+										<button class="btn btn-reset">Заказ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+			</main>
+			<!--  -->
+			@include('./assets/components/footer.html')
+		</div>
+		@include('./template/_scripts.html')
+	</body>
+</html>

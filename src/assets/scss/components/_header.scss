@@ -1,5 +1,10 @@
 .logo {
 	display: block;
+	img {
+		width: 24px;
+		height: 30px;
+		object-fit: cover;
+	}
 }
 
 .header {
@@ -23,6 +28,7 @@
 
 	&__inner {
 		padding: 10px 0;
+		height: 52px;
 
 		display: flex;
 		align-items: center;

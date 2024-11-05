@@ -39,3 +39,18 @@
 		scale: 0.99;
 	}
 }
+
+.btn-basic {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 135%;
+	transition: color 150ms ease-in-out;
+
+	&--red {
+		color: #f64545;
+
+		&:active {
+			color: #6d2424;
+		}
+	}
+}
