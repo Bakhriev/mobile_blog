@@ -1,24 +1,25 @@
 // base
-@import './base/reset';
+@use './base/reset';
 
 // fonts
-@import './fonts/fonts';
+@use './fonts/fonts';
 
 // helpers
-@import './helpers/vars';
-@import './helpers/mixins';
-@import './helpers/utils';
-@import './helpers/global';
+@use './helpers/vars';
+@use './helpers/mixins';
+@use './helpers/utils';
+@use './helpers/global';
 
 // components
-@import './components/btns';
-@import './components/checkbox';
-@import './components/article';
-@import './components/filters';
-@import './components/map';
+@use './components/btns';
+@use './components/checkbox';
+@use './components/article';
+@use './components/filters';
+@use './components/map';
 
-@import './components/header';
-@import './components/footer';
+@use './components/header';
+@use './components/footer';
 
-@import './components/pages/profile';
-@import './components/pages/inner';
+@use './components/pages/profile';
+@use './components/pages/inner';
+@use './components/pages/order';

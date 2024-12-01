@@ -6,7 +6,7 @@ const fileinclude = require('gulp-file-include');
 
 const gulpif = require('gulp-if');
 
-const sass = require('gulp-sass')(require('node-sass'));
+const sass = require('gulp-sass')(require('sass'));
 const cssbeautify = require('gulp-cssbeautify');
 const autoprefixer = require('gulp-autoprefixer');
 const gcmq = require('gulp-group-css-media-queries');
