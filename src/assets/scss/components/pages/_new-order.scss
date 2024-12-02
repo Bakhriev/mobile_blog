@@ -1,0 +1,70 @@
+.new-order {
+	&__title {
+		margin-bottom: 20px;
+
+		font-weight: 700;
+		font-size: 17px;
+		letter-spacing: -0.01em;
+	}
+
+	&__user {
+		display: flex;
+		gap: 2px;
+		margin-bottom: 15px;
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 135%;
+		color: rgba(0, 0, 0, 0.4);
+	}
+
+	&__name {
+		font-weight: 600;
+		color: #000;
+	}
+}
+.order-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	&__btn {
+		margin-top: 15px;
+	}
+}
+.field {
+	&__label {
+		margin-bottom: 8px;
+		display: inline-block;
+
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 133%;
+	}
+
+	&__input {
+		padding: 10px 16px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		background: #fff;
+
+		font-family: var(--font-family);
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 135%;
+		color: #000;
+
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__textarea {
+		padding: 10px 15px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		background: #fff;
+		min-height: 112px;
+		resize: none;
+	}
+}

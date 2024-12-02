@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	@include('./template/_head.html')
+	<body>
+		<div class="app order-page">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<a href="#">
+							<svg width="21" height="19">
+								<use href="./assets/img/svg/sprite.svg#arrow_back"></use>
+							</svg>
+						</a>
+
+						<span class="header__title">Заказы</span>
+
+						<div class="header__actions">
+							<button class="header__notice-btn btn-reset relative">
+								<svg width="24" height="24">
+									<use href="./assets/img/svg/sprite.svg#notice"></use>
+								</svg>
+								<span class="counter">2</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="container">
+					<div class="text-block order-page__text-block">
+						Здесь ваши предложения вам как исполнителю
+					</div>
+
+					<div class="order-page__btn-group">
+						<button class="order-page__btn disabled btn-reset">
+							Отменить заказ
+						</button>
+						<button class="order-page__btn done btn-reset">Заказ создан</button>
+					</div>
+
+					<div class="order-info">
+						<div class="order-info__title">Заказ №21</div>
+
+						<div class="stats order-info__stats">
+							<div class="stats__row">
+								<div class="stats__key">Заказчик:</div>
+								<div class="stats__value">Илья Ювелир</div>
+							</div>
+							<div class="stats__row">
+								<div class="stats__key">Исполнитель:</div>
+								<div class="stats__value">Denis Ivanov2</div>
+							</div>
+							<div class="stats__row">
+								<div class="stats__key">Сумма:</div>
+								<div class="stats__value">150000 руб.</div>
+							</div>
+							<div class="stats__row">
+								<div class="stats__key">Срок:</div>
+								<div class="stats__value">1 дня</div>
+							</div>
+						</div>
+
+						<div class="order-info__text">
+							Требуется сварщик в бригаду для монтажа зерноочистительного
+							комплекса. ЗП 100-150 тысяч в месяц на руки. Слесарь - 3П 100-120
+							тысяч. Территориально - Саратовская область. Обращаться в ЛС:
+							@id57349577
+						</div>
+					</div>
+
+					<div class="order-chat">
+						<div class="order-chat__title">Переписка в заказе</div>
+
+						<div class="chat-card">
+							<img
+								src="./assets/img/article_1.jpg"
+								alt=""
+								class="chat-card__img" />
+
+							<div class="chat-card__content">
+								<div class="chat-card__row">
+									<div class="chat-card__title">Илья Ювелир</div>
+									<div class="chat-card__date">2 мая в 13:24</div>
+								</div>
+								<div class="chat-card__row">
+									<div class="chat-card__text">
+										Завтра нужны 3 человека подсобника. ТЮЗ Театр...
+									</div>
+									<div class="chat-card__counter">1</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--  -->
+			@include('./assets/components/footer.html')
+		</div>
+		@include('./template/_scripts.html')
+	</body>
+</html>

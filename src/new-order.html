@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	@include('./template/_head.html')
+	<body>
+		<div class="app new-order">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<a href="#">
+							<svg width="21" height="19">
+								<use href="./assets/img/svg/sprite.svg#arrow_back"></use>
+							</svg>
+						</a>
+
+						<span class="header__title">Новый заказ</span>
+
+						<div class="header__actions">
+							<button class="header__notice-btn btn-reset relative">
+								<svg width="24" height="24">
+									<use href="./assets/img/svg/sprite.svg#notice"></use>
+								</svg>
+								<span class="counter">2</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="container">
+					<div class="new-order__title">Новый заказ</div>
+
+					<div class="new-order__user">
+						<span>Исполнитель: </span>
+						<div class="new-order__name">Denis Ivanov2</div>
+					</div>
+
+					<form action="#" class="order-form">
+						<div class="field">
+							<label for="mount" class="field__label">Сумма</label>
+							<input
+								type="text"
+								id="mount"
+								name="mount"
+								class="field__input input-reset"
+								placeholder="10000" />
+						</div>
+
+						<div class="field">
+							<label for="days" class="field__label">Срок (в днях)</label>
+							<input
+								type="text"
+								name="days"
+								id="days"
+								class="field__input input-reset"
+								placeholder="Срок" />
+						</div>
+
+						<div class="field">
+							<label for="desc" class="field__label">Описание задания</label>
+							<textarea
+								name="desc"
+								id="desc"
+								class="field__textarea input-reset"></textarea>
+						</div>
+
+						<button class="order-form__btn btn btn-reset">Продолжить</button>
+					</form>
+				</div>
+			</main>
+			<!--  -->
+			@include('./assets/components/footer.html')
+		</div>
+		@include('./template/_scripts.html')
+	</body>
+</html>
