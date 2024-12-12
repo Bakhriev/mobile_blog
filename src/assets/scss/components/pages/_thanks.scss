@@ -1,0 +1,27 @@
+.thanks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+	background-color: #30aff4;
+	color: #fff;
+
+	&__title {
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+
+	&__text {
+		margin-bottom: 20px;
+		line-height: 2;
+	}
+
+	&__link {
+		max-width: 400px;
+		width: 100%;
+		background: #fff;
+		color: #4da7c9;
+	}
+}

@@ -33,8 +33,10 @@
 	}
 }
 .field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 	&__label {
-		margin-bottom: 8px;
 		display: inline-block;
 
 		font-weight: 600;
@@ -66,5 +68,9 @@
 		background: #fff;
 		min-height: 112px;
 		resize: none;
+	}
+
+	&__hint {
+		color: gray;
 	}
 }
